@@ -8,7 +8,11 @@
         "strict": true,
         "esModuleInterop": true,
         "declaration": true,
-        "declarationDir": "./dist"
+        "declarationDir": "./dist",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "removeComments": true
     },
-    "include": ["src/**/*.ts"]
+    "include": ["src/**/*.ts"],
+    "exclude": ["integration-tests/**/*.test.ts", "integration-tests/utils.ts"]
 }
